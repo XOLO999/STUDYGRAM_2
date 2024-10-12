@@ -1025,3 +1025,30 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     </div>
 </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studygram</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Search Bar Section -->
+    <section id="search" class="section search-section">
+        <h2>🔍 Search Your Notes</h2>
+        <input type="text" id="searchInput" placeholder="Search for notes..." class="search-bar" />
+        <button id="searchButton" class="animated-button">Search</button>
+    </section>
+
+    <!-- Notes Display Section -->
+    <section id="notesDisplay" class="section notes-section">
+        <h2>Your Notes</h2>
+        <div id="notesContainer" class="grid-container">
+            <!-- Notes will be populated here dynamically -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
