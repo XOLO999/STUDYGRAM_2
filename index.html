@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Designer Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Designer 1 Template -->
+    <section class="designer1">
+        <header>
+            <h1>Designer 1's Template</h1>
+        </header>
+        <div class="content">
+            <p>This is a custom design layout by Designer 1.</p>
+        </div>
+    </section>
+
+    <!-- Designer 2 Template -->
+    <section class="designer2">
+        <header>
+            <h1>Designer 2's Template</h1>
+        </header>
+        <div class="content">
+            <p>This is a custom design layout by Designer 2.</p>
+        </div>
+    </section>the 
+
+    <!-- Add more designers href -->
+</body>
+</html>
+<button onclick="showTemplate('designer1')">Designer 1</button>
+<button onclick="showTemplate('designer2')">Designer 2</button>
+
+<script>
+function showTemplate(designer) {
+    document.querySelectorAll('section').forEach(section => {
+        section.style.display = 'none';
+    });
+    document.querySelector(`.${designer}`).style.display = 'block';
+}
+document.addEventListener('DOMContentLoaded', () => {
+    showTemplate('designer1');
+});
+                          </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studygram Templates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Studygram</h1>
+        <div class="nav">
+            <button onclick="showTemplate('template1')">Template 1</button>
+            <button onclick="showTemplate('te6mplate2')">Template 2</button>
+        </div>
+    </header>
+
+    <!-- Template 1 -->
+    <section class="template1">
+        <div class="upload-area">
+            <h2>Upload Study Notes</h2>
+            <input type="file" name="upload" />
+            <button>Upload PDF</button>
+        </div>
+        <div class="notes-list">
+            <h3>Your Study Notes</h3>
+            <ul>
+                <li>Mathematics Notes - Chapter 1</li>
+                <li>Physics Notes - Optics</li>
+                <li>Chemistry Notes - Organic Compounds</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Template 2 -->
+    <section class="template2">
+        <div class="dashboard">
+            <h2>Recent Uploads</h2>
+            <div class="notxolo999@example.come-card">
+                <h4>Biology Notes</h4>
+                <p>Details about biology chapter 5 notes...</p>
+            </div>
+            <div class="note-card">
+                <h4>History Notes</h4>
+                <p>Details about world history timeline...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Xolo999</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studygram - Multi Layouts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Studygram</h1>
+        <div class="nav">
+            <button onclick="showTemplate('template1')">Upload Notes</button>
+            <button onclick="showTemplate('template2')">Recent Uploads</button>
+            <button onclick="showTemplate('template3')">Your Profile</button>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for notes..." id="searchInput">
+        <button onclick="searchNotes()">Search</button>
+    </div>
+
+    <!-- Template 1: Upload Notes -->
+    <section class="template1">
+        <div class="upload-area">
+            <h2>Upload Study Notes</h2>
+            <input type="file" name="upload" />
+            <button>Upload PDF</button>
+        </div>
+        <div class="notes-list">
+            <h3>Your Study Notes</h3>
+            <ul id="noteList">
+                <li>Mathematics Notes - Chapter 1 <button>Download</button></li>
+                <li>Physics Notes - Optics <button>Download</button></li>
+                <li>Chemistry Notes - Organic Compounds <button>Download</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Template 2: Recent Uploads -->
+    <section class="template2">
+        <div class="dashboard">
+            <h2>Recent Uploads</h2>
+            <div class="note-card">
+                <h4>Biology Notes</h4>
+                <p>Details about biology chapter 5 notes...</p>
+                <button>Download PDF</button>
+            </div>
+            <div class="note-card">
+                <h4>History Notes</h4>
+                <p>World history timeline...</p>
+                <button>Download PDF</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template 3: User Profile -->
+    <section class="template3">
+        <div class="profile">
+            <h2>Your Profile</h2>
+            <img src="profile-pic.jpg" alt="Profile Picture">
+            <h3>Username: Xolo999</h3>
+            <p>Email: xolo999@example.com</p>
+            <button>Edit Profile</button>
+        </div>
+        <div class="activity">
+            <h3>Recent Activity</h3>
+            <ul>
+                <li>Uploaded Mathematics Notes</li>
+                <li>Downloaded Chemistry Notes</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Xolo999 | © 2024 Studygram</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studygram - Multi Layouts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Studygram</h1>
+        <div class="nav">
+            <button onclick="showTemplate('template1')">Upload Notes</button>
+            <button onclick="showTemplate('template2')">Recent Uploads</button>
+            <button onclick="showTemplate('template3')">Your Profile</button>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for notes..." id="searchInput">
+        <button onclick="searchNotes()">Search</button>
+    </div>
+
+    <!-- Template 1: Upload Notes -->
+    <section class="template1">
+        <div class="upload-area">
+            <h2>Upload Study Notes</h2>
+            <input type="file" name="upload" />
+            <button>Upload PDF</button>
+            <!-- Adding a study-related photo -->
+            <img src="images/upload-studying.jpg" alt="Uploading Notes" class="study-photo">
+        </div>
+        <div class="notes-list">
+            <h3>Your Study Notes</h3>
+            <ul id="noteList">
+                <li>Mathematics Notes - Chapter 1 <button>Download</button></li>
+                <li>Physics Notes - Optics <button>Download</button></li>
+                <li>Chemistry Notes - Organic Compounds <button>Download</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Template 2: Recent Uploads -->
+    <section class="template2">
+        <div class="dashboard">
+            <h2>Recent Uploads</h2>
+            <!-- Adding photos for each recent upload -->
+            <div class="note-card">
+                <img src="images/biology.jpg" alt="Biology Notes" class="study-photo">
+                <h4>Biology Notes</h4>
+                <p>Details about biology chapter 5 notes...</p>
+                <button>Download PDF</button>
+            </div>
+            <div class="note-card">
+                <img src="images/history.jpg" alt="History Notes" class="study-photo">
+                <h4>History Notes</h4>
+                <p>World history timeline...</p>
+                <button>Download PDF</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template 3: User Profile -->
+    <section class="template3">
+        <div class="profile">
+            <h2>Your Profile</h2>
+            <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-photo">
+            <h3>Username: Xolo999</h3>
+            <p>Email: xolo999@example.com</p>
+            <button>Edit Profile</button>
+        </div>
+        <div class="activity">
+            <h3>Recent Activity</h3>
+            <ul>
+                <li>Uploaded Mathematics Notes</li>
+                <li>Downloaded Chemistry Notes</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Xolo999 | © 2024 Studygram</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studygram - Unlimited Features</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <header>
+        <h1>Studygram</h1>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+        <div class="nav">
+            <button onclick="showTemplate('template1')">Upload Notes</button>
+            <button onclick="showTemplate('template2')">Recent Uploads</button>
+            <button onclick="showTemplate('template3')">Your Profile</button>
+            <button onclick="showTemplate('template4')">Discussion Forum</button>
+        </div>
+    </header>
+
+    <!-- Search Bar with Filters -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for notes..." id="searchInput">
+        <select id="subjectFilter">
+            <option value="all">All Subjects</option>
+            <option value="math">Math</option>
+            <option value="physics">Physics</option>
+            <option value="chemistry">Chemistry</option>
+        </select>
+        <button onclick="searchNotes()">Search</button>
+    </div>
+
+    <!-- Template 1: Upload Notes with Pagination and Tags -->
+    <section class="template1">
+        <div class="upload-area">
+            <h2>Upload Study Notes</h2>
+            <input type="file" name="upload" />
+            <button>Upload PDF</button>
+            <input type="text" placeholder="Enter tags (e.g. math, biology)">
+            <button>Submit</button>
+            <img src="images/upload-studying.jpg" alt="Uploading Notes" class="study-photo">
+        </div>
+        <div class="notes-list">
+            <h3>Your Study Notes</h3>
+            <ul id="noteList">
+                <!-- Pagination Example -->
+                <li>Mathematics Notes - Chapter 1 <button>Download</button> <span>⭐⭐⭐⭐☆</span></li>
+                <li>Physics Notes - Optics <button>Download</button> <span>⭐⭐⭐☆☆</span></li>
+                <!-- Pagination Controls -->
+                <div class="pagination">
+                    <button>Previous</button>
+                    <span>Page 1 of 5</span>
+                    <button>Next</button>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Template 2: Recent Uploads with Ratings and Comments -->
+    <section class="template2">
+        <div class="dashboard">
+            <h2>Recent Uploads</h2>
+            <div class="note-card">
+                <img src="images/biology.jpg" alt="Biology Notes" class="study-photo">
+                <h4>Biology Notes</h4>
+                <p>Details about biology chapter 5 notes...</p>
+                <button>Download PDF</button>
+                <span>⭐⭐⭐⭐☆</span> <!-- Ratings -->
+                <button>Comment</button>
+                <div class="comments">
+                    <input type="text" placeholder="Add a comment...">
+                    <button>Post</button>
+                </div>
+            </div>
+            <div class="note-card">
+                <img src="images/history.jpg" alt="History Notes" class="study-photo">
+                <h4>History Notes</h4>
+                <p>World history timeline...</p>
+                <button>Download PDF</button>
+                <span>⭐⭐⭐☆☆</span> <!-- Ratings -->
+                <button>Comment</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template 3: User Profile Customization -->
+    <section class="template3">
+        <div class="profile">
+            <h2>Your Profile</h2>
+            <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-photo">
+            <h3>Username: Xolo999</h3>
+            <p>Email: xolo999@example.com</p>
+            <button>Edit Profile</button>
+            <input type="text" placeholder="Update bio...">
+            <button>Save</button>
+        </div>
+        <div class="activity">
+            <h3>Recent Activity</h3>
+            <ul>
+                <li>Uploaded Mathematics Notes</li>
+                <li>Downloaded Chemistry Notes</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Template 4: Discussion Forum -->
+    <section class="template4">
+        <div class="discussion-forum">
+            <h2>Discussion Forum</h2>
+            <div class="forum-topic">
+                <h4>Mathematics - Algebra Discussion</h4>
+                <button>Join Discussion</button>
+                <p>Last post: 10 minutes ago</p>
+            </div>
+            <div class="forum-topic">
+                <h4>Physics - Optics Discussion</h4>
+                <button>Join Discussion</button>
+                <p>Last post: 5 hours ago</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Xolo999 | © 2024 Studygram</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studygram - Advanced Features</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Side Navigation Bar -->
+    <aside class="sidebar">
+        <div class="logo">Studygram</div>
+        <nav>
+            <button onclick="showTemplate('template1')">Upload Notes</button>
+            <button onclick="showTemplate('template2')">Recent Uploads</button>
+            <button onclick="showTemplate('template3')">Your Profile</button>
+            <button onclick="showTemplate('template4')">Forum</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Floating Action Button -->
+        <button class="floating-action-button">+</button>
+
+        <!-- Header with Gradient -->
+        <header>
+            <h1>Studygram</h1>
+            <button id="darkModeToggle">🌙 Dark Mode</button>
+        </header>
+
+        <!-- Background with Parallax Effect -->
+        <div class="parallax"></div>
+
+        <!-- Search Bar with Filters -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search for notes..." id="searchInput">
+            <select id="subjectFilter">
+                <option value="all">All Subjects</option>
+                <option value="math">Math</option>
+                <option value="physics">Physics</option>
+                <option value="chemistry">Chemistry</option>
+            </select>
+            <button onclick="searchNotes()">Search</button>
+        </div>
+
+        <!-- Template 1: Upload Notes with Grid Layout -->
+        <section class="template1">
+            <div class="upload-area">
+                <h2>Upload Study Notes</h2>
+                <input type="file" name="upload" />
+                <button class="animated-button">Upload PDF</button>
+                <input type="text" placeholder="Enter tags (e.g. math, biology)">
+                <button>Submit</button>
+                <img src="images/upload-studying.jpg" alt="Uploading Notes" class="study-photo">
+            </div>
+            <!-- Grid layout for notes -->
+            <div class="notes-grid">
+                <div class="note-card">
+                    <img src="images/math.jpg" alt="Math Notes" class="note-img">
+                    <h4>Math Notes - Chapter 1</h4>
+                    <button>Download PDF</button>
+                </div>
+                <div class="note-card">
+                    <img src="images/chemistry.jpg" alt="Chemistry Notes" class="note-img">
+                    <h4>Chemistry - Organic Compounds</h4>
+                    <button>Download PDF</button>
+                </div>
+                <div class="note-card">
+                    <img src="images/physics.jpg" alt="Physics Notes" class="note-img">
+                    <h4>Physics - Optics</h4>
+                    <button>Download PDF</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Template 2: Recent Uploads with Animations and Ratings -->
+        <section class="template2">
+            <div class="dashboard">
+                <h2>Recent Uploads</h2>
+                <div class="note-card animated-card">
+                    <img src="images/biology.jpg" alt="Biology Notes" class="study-photo">
+                    <h4>Biology Notes</h4>
+                    <p>Details about biology chapter 5 notes...</p>
+                    <button>Download PDF</button>
+                    <span>⭐⭐⭐⭐☆</span>
+                    <button>Comment</button>
+                    <div class="comments">
+                        <input type="text" placeholder="Add a comment...">
+                        <button>Post</button>
+                    </div>
+                </div>
+                <div class="note-card animated-card">
+                    <img src="images/history.jpg" alt="History Notes" class="study-photo">
+                    <h4>History Notes</h4>
+                    <p>World history timeline...</p>
+                    <button>Download PDF</button>
+                    <span>⭐⭐⭐☆☆</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Template 3: Profile with Interactive Chart -->
+        <section class="template3">
+            <div class="profile">
+                <h2>Your Profile</h2>
+                <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-photo">
+                <h3>Username: Xolo999</h3>
+                <p>Email: xolo999@example.com</p>
+                <button>Edit Profile</button>
+                <input type="text" placeholder="Update bio...">
+                <button>Save</button>
+            </div>
+            <!-- Progress Chart -->
+            <div class="progress-chart">
+                <h3>Your Progress</h3>
+                <canvas id="progressChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Template 4: Forum with Discussion Threads -->
+        <section class="template4">
+            <div class="discussion-forum">
+                <h2>Discussion Forum</h2>
+                <div class="forum-topic animated-topic">
+                    <h4>Mathematics - Algebra Discussion</h4>
+                    <button>Join Discussion</button>
+                    <p>Last post: 10 minutes ago</p>
+                </div>
+                <div class="forum-topic animated-topic">
+                    <h4>Physics - Optics Discussion</h4>
+                    <button>Join Discussion</button>
+                    <p>Last post: 5 hours ago</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Made by Xolo999 | © 2024 Studygram</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studygram - The Future of Study</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Side Navigation Bar with Neon Effects -->
+    <aside class="sidebar neon-glow">
+        <div class="logo">Studygram ⚡</div>
+        <nav>
+            <button onclick="showTemplate('template1')">🚀 Upload Notes</button>
+            <button onclick="showTemplate('template2')">🔥 Recent Uploads</button>
+            <button onclick="showTemplate('template3')">💼 Your Profile</button>
+            <button onclick="showTemplate('template4')">📢 Forum</button>
+            <button onclick="showTemplate('template5')">🎮 Gamification</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+
+        <!-- Dynamic Gradient Background -->
+        <div class="dynamic-bg"></div>
+
+        <!-- Floating Action Button with Neon Glow -->
+        <button class="floating-action-button neon-glow">+</button>
+
+        <!-- Voice Command Button -->
+        <button class="voice-command-button" onclick="startVoiceCommands()">🎤 Voice Command</button>
+
+        <!-- 3D Parallax Effect Section -->
+        <div class="parallax-3d">
+            <div class="content-layer">
+                <h1>Welcome to the Future of Study!</h1>
+                <p>Your ultimate hub for study notes, collaboration, and more.</p>
+                <button class="start-button">Start Exploring</button>
+            </div>
+        </div>
+
+        <!-- Search Bar with AI Suggestions -->
+        <div class="search-bar">
+            <input type="text" placeholder="AI-Powered Search..." id="searchInput" oninput="showAISuggestions()">
+            <div id="aiSuggestions" class="suggestions"></div>
+            <select id="subjectFilter">
+                <option value="all">All Subjects</option>
+                <option value="math">Math</option>
+                <option value="physics">Physics</option>
+                <option value="chemistry">Chemistry</option>
+            </select>
+            <button onclick="searchNotes()">Search</button>
+        </div>
+
+        <!-- 3D Interactive Models for Study Items -->
+        <section class="template1">
+            <div class="upload-area">
+                <h2>Upload Your Study Notes</h2>
+                <input type="file" name="upload" />
+                <button class="animated-button">Upload PDF</button>
+                <img src="images/3d-books.gif" alt="3D Study Model" class="study-photo">
+            </div>
+            <!-- 3D models rotating -->
+            <div class="interactive-3d-models">
+                <canvas id="3dModelCanvas"></canvas>
+            </div>
+        </section>
+
+        <!-- Gamification Section with Badges -->
+        <section class="template5">
+            <h2>Gamification - Earn Badges</h2>
+            <div class="badges">
+                <div class="badge neon-badge">
+                    <img src="images/badge-upload.png" alt="Upload Badge">
+                    <h4>Uploader Badge</h4>
+                </div>
+                <div class="badge neon-badge">
+                    <img src="images/badge-download.png" alt="Download Badge">
+                    <h4>Downloader Badge</h4>
+                </div>
+                <div class="badge neon-badge">
+                    <img src="images/badge-top.png" alt="Top User Badge">
+                    <h4>Top Contributor</h4>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Made by Xolo999 | © 2024 Studygram ⚡ | Powered by Innovation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studygram 2.0 - Bhayankar Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar neon-glow">
+        <div class="logo">Studygram ⚡</div>
+        <nav>
+            <button onclick="navigate('dashboard')">📚 Dashboard</button>
+            <button onclick="navigate('upload')">🔥 Upload Notes</button>
+            <button onclick="navigate('badges')">🎮 Badges</button>
+            <button onclick="navigate('3dModels')">🔮 3D Study Tools</button>
+            <button onclick="navigate('realTime')">📊 Real-Time Data</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        
+        <!-- Parallax and Animations Section -->
+        <section id="dashboard" class="section parallax">
+            <div class="parallax-layer">
+                <h1>Welcome to Studygram 🚀</h1>
+                <p>Your ultimate hub for study notes, 3D tools, real-time updates, and more!</p>
+            </div>
+        </section>
+
+        <!-- 3D Rotating Cards with Drag Functionality -->
+        <section id="upload" class="section card-section">
+            <div class="upload-area">
+                <h2>Upload Your Study Notes</h2>
+                <div class="upload-zone">
+                    <input type="file" name="upload" />
+                    <button class="animated-button neon-glow">📂 Upload PDF</button>
+                    <button class="upload-voice">🎤 Use Voice to Upload</button>
+                </div>
+                <!-- Draggable Cards with Notes -->
+                <div class="card-grid">
+                    <div class="card neon-card" draggable="true">
+                        <img src="images/math-notes.png" alt="Math Notes">
+                        <h3>Math - Algebra</h3>
+                        <button>📥 Download</button>
+                    </div>
+                    <div class="card neon-card" draggable="true">
+                        <img src="images/chemistry-notes.png" alt="Chemistry Notes">
+                        <h3>Chemistry - Organic</h3>
+                        <button>📥 Download</button>
+                    </div>
+                    <div class="card neon-card" draggable="true">
+                        <img src="images/physics-notes.png" alt="Physics Notes">
+                        <h3>Physics - Optics</h3>
+                        <button>📥 Download</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Models Section for Interactive Study -->
+        <section id="3dModels" class="section models-section">
+            <h2>Interactive 3D Study Tools</h2>
+            <canvas id="3d-canvas"></canvas>
+            <!-- Dynamic 3D Models for Chemistry, Geometry, etc. -->
+        </section>
+
+        <!-- Real-Time Data and Stats -->
+        <section id="realTime" class="section real-time-section">
+            <h2>Real-Time Updates</h2>
+            <div class="real-time-data">
+                <h4>New Notes Uploaded:</h4>
+                <p id="new-notes-count">5</p>
+                <h4>Users Online:</h4>
+                <p id="users-online">12</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Made by Xolo999 | Studygram ⚡ 2024 | The Ultimate Study Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+      </html>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studygram 2.0 - Khatarnak Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Killer Sidebar Navigation -->
+    <aside class="sidebar neon-glow">
+        <div class="logo">Studygram ⚡</div>
+        <nav>
+            <button onclick="navigate('dashboard')">📚 Dashboard</button>
+            <button onclick="navigate('upload')">🔥 Upload Notes</button>
+            <button onclick="navigate('badges')">🎮 Badges</button>
+            <button onclick="navigate('3dModels')">🔮 3D Study Tools</button>
+            <button onclick="navigate('realTime')">📊 Real-Time Data</button>
+            <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        
+        <!-- Insane Parallax Welcome Section -->
+        <section id="dashboard" class="section parallax">
+            <div class="parallax-layer">
+                <h1>Welcome to Studygram 🚀</h1>
+                <p>Your ultimate hub for study notes, 3D tools, real-time updates, and more!</p>
+                <button class="start-button neon-glow" onclick="startVoiceCommands()">🎤 Use Voice Commands</button>
+            </div>
+        </section>
+
+        <!-- Upload Notes with Neon Effects -->
+        <section id="upload" class="section card-section">
+            <h2>Upload Your Study Notes</h2>
+            <div class="upload-zone">
+                <input type="file" name="upload" />
+                <button class="animated-button neon-glow">📂 Upload PDF</button>
+            </div>
+
+            <!-- Draggable Cards with 3D Flip Animation -->
+            <div class="card-grid">
+                <div class="card neon-card" draggable="true">
+                    <img src="images/math-notes.png" alt="Math Notes">
+                    <h3>Math - Algebra</h3>
+                    <button>📥 Download</button>
+                </div>
+                <div class="card neon-card" draggable="true">
+                    <img src="images/chemistry-notes.png" alt="Chemistry Notes">
+                    <h3>Chemistry - Organic</h3>
+                    <button>📥 Download</button>
+                </div>
+                <div class="card neon-card" draggable="true">
+                    <img src="images/physics-notes.png" alt="Physics Notes">
+                    <h3>Physics - Optics</h3>
+                    <button>📥 Download</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gamification Section with Rewards -->
+        <section id="badges" class="section">
+            <h2>🎮 Earn Badges & Rewards</h2>
+            <div class="badges">
+                <div class="badge neon-badge">
+                    <img src="images/badge-upload.png" alt="Uploader Badge">
+                    <h4>Top Uploader</h4>
+                </div>
+                <div class="badge neon-badge">
+                    <img src="images/badge-downloader.png" alt="Downloader Badge">
+                    <h4>Top Downloader</h4>
+                </div>
+                <div class="badge neon-badge">
+                    <img src="images/badge-contributor.png" alt="Top Contributor Badge">
+                    <h4>Top Contributor</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Interactive Study Tools -->
+        <section id="3dModels" class="section models-section">
+            <h2>🔮 Interactive 3D Study Tools</h2>
+            <canvas id="3dCanvas"></canvas>
+        </section>
+
+        <!-- Real-Time Data and Stats -->
+        <section id="realTime" class="section real-time-section">
+            <h2>📊 Real-Time Updates</h2>
+            <div class="real-time-data">
+                <h4>New Notes Uploaded:</h4>
+                <p id="newNotesCount">5</p>
+                <h4>Users Online:</h4>
+                <p id="usersOnline">12</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Made by Xolo999 | Studygram ⚡ 2024 | Powered by Innovation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studygram 2.0 - Ultimate Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar neon-glow">
+        <div class="logo">Studygram ⚡</div>
+        <nav>
+            <button onclick="navigate('dashboard')">📚 Dashboard</button>
+            <button onclick="navigate('upload')">🔥 Upload Notes</button>
+            <button onclick="navigate('badges')">🎮 Badges</button>
+            <button onclick="navigate('3dModels')">🔮 3D Study Tools</button>
+            <button onclick="navigate('realTime')">📊 Real-Time Data</button>
+            <button onclick="navigate('liveChat')">💬 Live Chat</button>
+            <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+        </nav>
+    </aside>
+
+    <div class="main-content">
+        
+        <!-- Parallax Welcome Section -->
+        <section id="dashboard" class="section parallax">
+            <div class="parallax-layer">
+                <h1>Welcome to Studygram 🚀</h1>
+                <p>Your ultimate hub for study notes, live chats, and 3D tools!</p>
+                <button class="start-button neon-glow" onclick="startVoiceCommands()">🎤 Use Voice Commands</button>
+            </div>
+        </section>
+
+        <!-- Upload Notes -->
+        <section id="upload" class="section card-section">
+            <h2>Upload Your Study Notes</h2>
+            <div class="upload-zone">
+                <input type="file" name="upload" />
+                <button class="animated-button neon-glow">📂 Upload PDF</button>
+            </div>
+            <div class="card-grid">
+                <div class="card neon-card" draggable="true">
+                    <img src="images/math-notes.png" alt="Math Notes">
+                    <h3>Math - Algebra</h3>
+                    <button>📥 Download</button>
+                </div>
+                <div class="card neon-card" draggable="true">
+                    <img src="images/chemistry-notes.png" alt="Chemistry Notes">
+                    <h3>Chemistry - Organic</h3>
+                    <button>📥 Download</button>
+                </div>
+                <div class="card neon-card" draggable="true">
+                    <img src="images/physics-notes.png" alt="Physics Notes">
+                    <h3>Physics - Optics</h3>
+                    <button>📥 Download</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gamification Section -->
+        <section id="badges" class="section">
+            <h2>🎮 Earn Badges & Rewards</h2>
+            <div class="badges">
+                <div class="badge neon-badge">
+                    <img src="images/badge-upload.png" alt="Uploader Badge">
+                    <h4>Top Uploader</h4>
+                </div>
+                <div class="badge neon-badge">
+                    <img src="images/badge-downloader.png" alt="Downloader Badge">
+                    <h4>Top Downloader</h4>
+                </div>
+                <div class="badge neon-badge">
+                    <img src="images/badge-contributor.png" alt="Top Contributor Badge">
+                    <h4>Top Contributor</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Interactive Study Tools -->
+        <section id="3dModels" class="section models-section">
+            <h2>🔮 Interactive 3D Study Tools</h2>
+            <canvas id="3dCanvas"></canvas>
+        </section>
+
+        <!-- Real-Time Data and Stats -->
+        <section id="realTime" class="section real-time-section">
+            <h2>📊 Real-Time Updates</h2>
+            <div class="real-time-data">
+                <h4>New Notes Uploaded:</h4>
+                <p id="newNotesCount">5</p>
+                <h4>Users Online:</h4>
+                <p id="usersOnline">12</p>
+            </div>
+        </section>
+
+        <!-- Live Chat Section -->
+        <section id="liveChat" class="section chat-section">
+            <h2>💬 Live Chat Room</h2>
+            <div class="chat-box" id="chatBox">
+                <div class="messages" id="messages"></div>
+                <input type="text" id="messageInput" placeholder="Type your message here..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Made by Xolo999 | Studygram ⚡ 2024 | Powered by Innovation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                      </html>
+<!-- User Authentication Section -->
+<section id="auth" class="section">
+    <h2>🔑 User Authentication</h2>
+    <form id="authForm">
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="animated-button neon-glow">Login</button>
+        <button type="button" class="animated-button neon-glow" onclick="showSignup()">Signup</button>
+    </form>
+</section>
+
+<!-- Study Groups Section -->
+<section id="studyGroups" class="section">
+    <h2>👥 Study Groups</h2>
+    <div class="group-list">
+        <div class="group neon-card">
+            <h3>Math Study Group</h3>
+            <button>Join Group</button>
+        </div>
+        <div class="group neon-card">
+            <h3>Chemistry Study Group</h3>
+            <button>Join Group</button>
+        </div>
+    </div>
+</section>
+
+<!-- Analytics Dashboard Section -->
+<section id="analytics" class="section">
+    <h2>📈 Analytics Dashboard</h2>
+    <canvas id="analyticsChart"></canvas>
+</section>
+<!-- Parallax Welcome Section with Background Video -->
+<section id="dashboard" class="section parallax">
+    <video autoplay muted loop class="bg-video">
+        <source src="videos/study-background.mp4" type="video/mp4">
+    </video>
+    <div class="parallax-layer">
+        <h1>Welcome to Studygram 🚀</h1>
+        <p>Your ultimate hub for study notes, live chats, and 3D tools!</p>
+        <button class="start-button animated-button">🎤 Use Voice Commands</button>
+    </div>
+</section>
