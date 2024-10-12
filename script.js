@@ -151,3 +151,33 @@ function updateDocument(data) {
 
 // Initialize the collaboration
 initializeCollaboration();
+// Sample data for notes
+const notes = [
+    { title: 'Chemistry Basics', subject: 'Chemistry', content: 'Intro to chemistry concepts.' },
+    { title: 'Physics Mechanics', subject: 'Physics', content: 'Understanding mechanics and motion.' },
+    { title: 'Math Algebra', subject: 'Math', content: 'Fundamentals of algebra.' },
+    { title: 'English Grammar', subject: 'English', content: 'Basic grammar rules.' },
+    { title: 'Hindi Literature', subject: 'Hindi', content: 'Introduction to Hindi literature.' }
+];
+
+// Function to display notes with subject-specific classes
+function displayNotes(filteredNotes) {
+    const notesContainer = document.getElementById('notesContainer');
+    notesContainer.innerHTML = ''; // Clear previous notes
+    filteredNotes.forEach(note => {
+        const noteCard = document.createElement('div');
+        noteCard.className = `note-card ${note.subject}`;
+        noteCard.innerHTML = `<h3 class="note-title">${note.title}</h3><p>${note.content}</p>`;
+        notesContainer.appendChild(noteCard);
+    });
+}
+
+// Initial display of all notes
+displayNotes(notes);
+
+// Search functionality
+document.getElementById('searchButton').addEventListener('click', function () {
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    const filteredNotes = notes.filter(note => note.title.toLowerCase().includes(query) || note.subject.toLowerCase().includes(query));
+    displayNotes(filteredNotes);
+});
